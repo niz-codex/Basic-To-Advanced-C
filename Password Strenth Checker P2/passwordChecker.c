@@ -31,11 +31,11 @@ int main(int argc, char *argv[]){
     else if (result >= 3) printf("Medium\n");
     else printf("Weak\n");
 
-    if (!length) printf("- Not enough length\n");
-    if (!upper) printf("- Have no upper character!\n");
-    if (!lower) printf("- Have no lower character!\n");
-    if (!digit) printf("- Have no number\n");
-    if (!special) printf("- Have no special character\n");
+    if (!length) printf("- Minimum length (8> characters)!\n");
+    if (!upper) printf("- At least one uppercase letter!\n");
+    if (!lower) printf("- At least one lowecase letter!\n");
+    if (!digit) printf("- At least one digit!\n");
+    if (!special) printf("- At least one special character (like `!@#$%^&*`)!\n");
 
     return 0;
 }
