@@ -5,7 +5,7 @@
 
 
 
-#define MAX_ATTEMPTS 3
+// #define MAX_ATTEMPTS 3
 #define MAX_LINE 256
 #define FILE_NAME "user_details.txt"
 
@@ -71,7 +71,7 @@ int main() {
 void loginSystem (Info *info) {
     FILE *fp = fopen(FILE_NAME, "r");
     char fileOutput[MAX_LINE];
-    bool loggedIn;
+    bool loggedIn = false;
 
     if (!fp){
         printf("Please register your account, then login!\n");
